@@ -1,0 +1,228 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url('../fonts/Nunito-Light.ttf');
+  }
+
+  @font-face {
+    font-family: myFirstFontSemiBold;
+    src: url('../fonts/Nunito-SemiBold.ttf');
+  }
+  
+  @font-face {
+    font-family: myFirstFontBold;
+    src: url('../fonts/Nunito-Bold.ttf');
+  }
+
+  @font-face {
+    font-family: myFirstFontBolder;
+    src: url('../fonts/Nunito-ExtraBold.ttf');
+  }
+  
+  @font-face {
+    font-family: myFirstFontLight;
+    src: url('../fonts/Nunito-ExtraLight.ttf');
+  }
+  
+  
+  body {
+    font-family: myFirstFontBold;
+    background: #1F2833;
+    color: #fff
+  }
+  
+  a {
+    color: white;
+    outline: none;
+  }
+  
+  a:hover {
+    text-decoration: none;
+    color: white;
+  }
+  
+  button, input, a {
+    outline: none !important;
+  }
+
+  .slick-slide > div {
+    padding: 0px 8px !important;
+  }
+
+  .slick-arrow.slick-next {
+    right: 0 !important;
+    z-index: 5;
+  }
+
+  .slick-arrow.slick-prev {
+    left: 0 !important;
+    z-index: 5;
+  }
+
+  .slick-prev:before, .slick-next:before {
+    position: absolute;
+    top: 0;
+    font-size: 30px;  
+  }
+  .slick-prev:before {
+    left: 0;
+  }
+
+  .slick-next:before {
+    right: 0;
+  }
+
+  #pagination {
+    display: flex;
+    justify-content: center;
+  }
+
+  #pagination ul {
+    display: inline-flex;
+    margin: 0 auto;
+    padding: 0;
+  }
+  #pagination ul li {
+    list-style-type: none;
+    height: 30px;
+    width: 30px;
+    margin: 4px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid rgb(189, 112, 50)
+  }
+
+  #main_bread-crumb {
+    font-family: myFirstFont;
+    font-style: italic
+  }
+
+  #main_bread-crumb ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  #main_bread-crumb ul li {
+    list-style-type: none;
+    padding: 5px 20px;
+    position: relative;
+    padding-left: 8px;
+    color: rgb(255, 255, 255);
+  }
+
+  #main_bread-crumb ul li a {
+    color: rgb(255, 255, 255);
+  }
+
+  #main_bread-crumb ul li i, #main_bread-crumb ul li span {
+    z-index: 2;
+    position: relative;
+  }
+
+  #main_bread-crumb ul li::after {
+    content: '';
+    border: 17px solid white;
+    position: absolute;
+    border-left-color: transparent;
+    top: 0px;
+    left: -17px;
+    z-index: 1;
+  }
+
+  #main_bread-crumb ul li.bc-detail::before {
+    content: '';
+    border: 17px solid transparent;
+    position: absolute;
+    border-left-color: #08133f;
+    top: 0px;
+    right: -34px;
+    z-index: 1;
+  }
+
+  #main_bread-crumb ul li.bc-home {
+    background: #5073FE;
+  }
+
+  #main_bread-crumb ul li.bc-home::after {
+    border: 17px solid #5073FE;
+    border-left-color: transparent;
+  }
+
+  #main_bread-crumb ul li.bc-category::after {
+    border: 17px solid #243a91;
+    border-left-color: transparent;
+  }
+
+  #main_bread-crumb ul li.bc-category {
+    background: #243a91
+  }
+
+  #main_bread-crumb ul li.bc-detail::after {
+    border: 17px solid #08133f;
+    border-left-color: transparent;
+  }
+
+  #main_bread-crumb ul li.bc-detail {
+    background: #08133f;
+    font-family: myFirstFontBold;
+  }
+
+  #page-loading {
+    position: fixed;
+    z-index: 100000000;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(144, 192, 236, 0.493);
+  }
+  #page-loading img {
+    position: absolute;
+    width: 68px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+  }
+
+  textarea::-webkit-scrollbar {
+    opacity: 0;
+  }
+  
+  /* Track */
+  textarea::-webkit-scrollbar-track {
+    opacity: 0;
+
+  }
+  
+  /* Handle */
+  textarea::-webkit-scrollbar-thumb {
+    opacity: 0;
+
+  }
+  
+  /* Handle on hover */
+  textarea::-webkit-scrollbar-thumb:hover {
+    opacity: 0;
+  
+  }
+
+  .video-responsive {
+    display: flex;
+    align-items: center;
+  }
+  .video-container {
+    width: 67%
+  }
+
+  .video-container iframe {
+    width: 100%;
+  }
+
+  .video-title {
+    width: 32%;
+    margin-left: 20px;
+    padding-bottom: 75px
+  }

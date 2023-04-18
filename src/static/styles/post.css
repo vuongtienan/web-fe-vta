@@ -1,0 +1,447 @@
+#filter .filter-container {
+  display: flex;
+  align-items: center;
+}
+
+#filter .filter-container ul.filter-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-left: 20px;
+}
+
+#filter .filter-container ul li.filter-item {
+  list-style-type: none;
+  padding: 5px 20px;
+  font-family: myFirstFont;
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-size: 1.2rem;
+  position: relative;
+  margin-right: 8px;
+}
+
+#filter .filter-container ul li.filter-item:hover ul {
+  display: block;
+}
+
+#filter .filter-container ul li.filter-item ul {
+  display: none;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  background: rgba(56, 55, 55, 0.829);
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+#filter .filter-container ul li.filter-item .filter-menu li {
+  display: block;
+  padding: 5px 20px;
+  width: 160px;
+  font-style: italic;
+  font-size: 1rem;
+}
+
+#filter .filter-container ul li.filter-item .filter-menu li:hover {
+  background: rgba(255, 255, 255, 0.37);
+}
+
+#filter .filter-container ul li.filter-item.active {
+  border-bottom: 1px solid rgb(189, 112, 50);
+}
+
+#filter .filter-tags {
+  display: inline-flex;
+  margin-left: 20px;
+}
+
+#filter .filter-tags .tag {
+  margin-right: 12px;
+  font-size: 0.8rem;
+  padding: 5px 10px;
+  /* border: 1px solid rgb(189, 112, 50); */
+  border-radius: 888888px;
+  display: inline-flex;
+  align-items: center;
+  background: #415264;
+}
+
+#filter .filter-tags .tag span {
+  margin-right: 12px;
+}
+
+#filter .filter-tags .tag i {
+  cursor: pointer;
+}
+
+#filter .filter-tags .tag i:hover {
+  transition: ease 0.2s;
+  color: rgb(218, 83, 83);
+}
+
+#filter .filter-tag-container {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 45px;
+}
+
+.all-post {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.all-post span {
+  /* color: #5e7dfa */
+}
+
+.all-post .line {
+  width: 100%;
+  display: inline-block;
+  height: 1px;
+  background: rgb(189, 112, 50);
+  margin-left: 32px
+}
+
+.opt {
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.opt .create-post {
+  flex-shrink: 0;
+  margin-left: 32px
+}
+
+.opt .create-post .create-new {
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.opt .create-post .create-new:hover {
+  color: #5073fe;
+  transition: ease .2s;
+}
+
+.opt .create-post i {
+  color: #5073fe;
+}
+
+#mb-filter button {
+  color: white;
+  background: transparent;
+  border: 1px solid white;
+}
+
+#mb-filter button span {
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.postList {
+  margin-top: 68px
+}
+
+.postList .postList-list {
+  margin-bottom: 32px;
+}
+
+.postList .postList-list-container {
+  display: flex;
+  /* align-items: center; */
+}
+
+.postList .info-container {
+  width: 12%;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.postList .info-container .user-container {
+  width: 100%
+}
+
+.postList .info-container .user-container img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.postList .info-container .user-container .username {
+  display: inline-block;
+  width: 100%;
+  flex-shrink: 0;
+  text-align: center;
+  margin-top: 14px;
+}
+
+.postList .info-container .create-time span {
+  font-family: myFirstFont;
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+.postList .content-container {
+  width: 70%;
+}
+
+.postList .content-container .post-title {
+  font-size: 1.5rem;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+
+.postList .content-container .post-title:hover {
+  color: #8392ca;
+  transition: ease .3s;
+}
+
+.postList .content-container .content {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  font-family: myFirstFont;
+  text-indent: 18px;
+  width: 100%;
+}
+
+.postList .content-container .category {
+  font-size: .9rem;
+  padding: 5px 12px;
+  display: inline-block;
+  border-radius: 99999px;
+  background: rgba(255, 255, 255, 0.199);
+}
+
+.postList .content-container .read-more {
+  color: #6882e7;
+  font-family: myFirstFont
+}
+
+.postList .postList-container .tools {
+  display: flex;
+  margin-top: 20px;
+}
+
+.postList .postList-container .tools button {
+  border: none;
+  outline: none;
+  margin-right: 16px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.postList .postList-container .tools button span {
+  color: white;
+  display: inline-block;
+  margin-left: 8px
+}
+
+.postList .postList-container .tools .like {
+  color: rgb(207, 55, 55);
+}
+
+.postList .postList-container .tools .dislike {
+  color: white;
+}
+
+.postList .postList-container .tools .comment {
+  color: #6882e7
+}
+
+.postList .postList-container .tools .comment.active {
+  border-bottom: 1px solid #6882e7 !important;
+}
+
+.postList .postList-container .tools .share {
+  color: #6882e7
+}
+
+.postList .postList-container .tools .add {
+  color: #6882e7;
+  margin-left: auto;
+}
+
+.postList .boundary {
+  width: 90%;
+  /* height: 1px; */
+  margin: 20px auto;
+  /* align-self: flex-start; */
+  background: rgba(189, 113, 50, 0.568);
+}
+
+.postList .mb-user-info {
+  text-align: right;
+  display: none;
+  font-family: myFirstFont;
+  font-style: italic;
+}
+
+.postList .comments {
+  margin-top: 20px;
+  display: none;
+}
+
+.postList .comments.active {
+  display: block;
+  transition: ease-in .2s;
+}
+
+.postList .comment-input-container {
+  flex-grow: 1;
+  position: relative;
+  display: flex;
+}
+
+.postList .comment-input-container button {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+  color: #5073fe;
+}
+
+.postList .comment-input {
+  border: 1px solid rgba(255, 255, 255, 0.267);
+  ;
+  outline: none;
+  color: white;
+  padding: 8px;
+  height: 80px !important;
+  font-size: 1rem;
+  font-family: myFirstFont;
+  border-radius: 20px;
+  background: transparent;
+  padding-left: 12px;
+  resize: none;
+  padding-right: 80px;
+  width: 100%;
+}
+
+.postList .user-comment {
+  margin-top: 32px;
+  width: 80%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.postList .user-comment img {
+  width: 40px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.postList .comment-list ul {
+  padding: 0;
+}
+
+.postList-delete-comt {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  color: rgb(243, 67, 67);
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+.postList .comment-list ul li {
+  position: relative;
+  list-style-type: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.158);
+  padding-top: 24px;
+  width: 80%;
+}
+
+.postList .comment-list ul li .comment-author {
+  display: flex;
+  align-items: center;
+}
+
+.postList .comment-list ul li .comment-author img {
+  width: 40px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.postList .comment-list ul li .comment-content {
+  margin-top: 12px;
+  font-family: myFirstFont;
+}
+
+.postList .postList-comment-loading img {
+  width: 20px;
+  opacity: 0.6;
+  margin: auto;
+  display: block;
+}
+
+.comemnt-list.comment-alert {
+  font-family: myFirstFont;
+  opacity: .5;
+  font-style: italic;
+}
+
+.postList .author-role {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.5rem;
+}
+
+.postList button.delete {
+  border: none;
+  outline: none;
+  color: rgb(233, 77, 77);
+  background: transparent;
+  cursor: pointer;
+  margin: 0px 12px;
+}
+
+.postList .delete-confirm {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.postList .confirm-container {
+  background: rgba(37, 38, 39, 0.788);
+  padding: 100px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.349);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+.postList .confirm-container .btns {
+  text-align: right;
+}
+
+.postList .confirm-container button {
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+}

@@ -1,0 +1,3 @@
+export const UPDATE_USER = 'UPDATE_USER'
+export const TOGGLE_LOADING = 'TOGGLE_LOADING'
+export const GET_USERINFO = 'GET_USERINFOR'
