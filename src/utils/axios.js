@@ -2,7 +2,7 @@ import axios from 'axios'
 
 axios.defaults.baseURL = 'http://localhost:5000'
 
-//axios.defaults.baseURL = 'https://thanhtannews-server.herokuapp.com'
+
 
 const api = (method, url, data) => {
   let userToken
